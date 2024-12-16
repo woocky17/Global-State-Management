@@ -1,5 +1,5 @@
 import { ReactNode, useReducer } from "react";
-import loginReducer from "./Reducer/loginReducer";
+import loginReducer from "./reducer/loginReducer";
 import AuthContext from "./contexts/authContext";
 
 interface Props {
