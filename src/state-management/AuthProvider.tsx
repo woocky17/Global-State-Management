@@ -7,10 +7,10 @@ interface Props {
 }
 
 const AuthProvider = ({ children }: Props) => {
-  const [user, authDispatch] = useReducer(loginReducer, "");
+  const [user, dispatch] = useReducer(loginReducer, "");
 
   return (
-    <AuthContext.Provider value={{ user, dispatch: authDispatch }}>
+    <AuthContext.Provider value={{ user, dispatch }}>
       {children}
     </AuthContext.Provider>
   );

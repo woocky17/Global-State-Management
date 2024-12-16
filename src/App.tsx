@@ -9,17 +9,17 @@ import TasksContext from "./state-management/contexts/tasksContext";
 import loginReducer from "./state-management/Reducer/loginReducer";
 import AuthContext from "./state-management/contexts/authContext";
 import AuthProvider from "./state-management/AuthProvider";
+import TaskProvider from "./state-management/TaskProvider";
 
 function App() {
-  const [tasks, tasksDispatch] = useReducer(tasksReducer, []);
   return (
     <>
-      <TasksContext.Provider value={{ tasks, dispatch: tasksDispatch }}>
+      <TaskProvider>
         <AuthProvider>
           <NavBar />
           <HomePage />
         </AuthProvider>
-      </TasksContext.Provider>
+      </TaskProvider>
     </>
   );
 }
