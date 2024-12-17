@@ -1,7 +1,7 @@
 import NavBar from "./state-management/NavBar";
 import HomePage from "./state-management/HomePage";
 import { TaskProvider } from "./state-management/tasks";
-import AuthProvider from "./state-management/AuthProvider";
+import AuthProvider from "./state-management/auth/AuthProvider";
 
 function App() {
   return (

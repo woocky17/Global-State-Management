@@ -1,6 +1,6 @@
 import { Dispatch } from "react";
-import { LogAction } from "../reducer/loginReducer";
 import React from "react";
+import { LogAction } from "./AuthProvider";
 
 interface AuthContexts {
   user: string;
